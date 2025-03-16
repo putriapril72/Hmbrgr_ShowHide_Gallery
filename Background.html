@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background.html</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+body {
+   font-family: Arial, sans-serif;
+}
+#hamburger {
+   cursor: pointer;
+   font-size: 30px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   z-index: 1000;
+}
+
+#menu_vertikal {
+   display: none; 
+   position: fixed; 
+   top: 0;
+   right: 0; 
+   width: 300px; 
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: white;
+   z-index: 999;
+   padding-top: 60px;
+   box-shadow: -2px 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#menu_vertikal ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#menu_vertikal li {
+   padding: 15px 20px;
+   text-align: center;
+}
+
+#menu_vertikal a {
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+}
+
+#menu_vertikal a:hover {
+   text-decoration: underline; 
+}
+.paddingg {
+    padding: 1%;
+}
+</style>
+
+<body>
+   <b id="hamburger" onclick="showMenu();">&#8801;</b>
+   <nav id="menu_vertikal">
+      <ul>
+         <li><a href="websitepage.html">Home</a></li>
+         <li><a href="Experience.html">Experience</a></li>
+         <li><a href="Lifestyle">Lifestyle</a></li>
+      </ul>
+   </nav>
+   <div class="paddingg">
+   <h1>Background about me :D</h1>
+   <br>
+   <p>Perkenalkan aku Putri Aprilya Nurpratiwi</p>
+   <br>
+   <img
+   src="https://media.licdn.com/dms/image/v2/D5603AQEg3kvtE7apdw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1702791810664?e=2147483647&v=beta&t=Iz8j3hCRoYUbT_VADSYNxcFmTgZ_rvimGbi0C01p-T4"
+   alt="gambar 1">
+   <p>Mahasiswa Logistik Kelautan dari Universitas Pendidikan Indonesia 
+    yang suka sekali mempelajari hal-hal baru
+   </p>
+   <p>Logistik Kelautan sendiri mempelajari banyak hal seperti, Supply Chain, Bisnis Kepelabuhanan, Manajemen Gudang</p>
+   <p>Manajemen Pemasaran, K3, Pengadaan dan persediaan, dan masih banyak lagi.</p>
+   <p>Aku juga adalah seorang pioneer pada organisasi bernama Sebentala untuk mengimplementasikan terkait peduli terhadap lingkungan</p>
+   
+   <p>Keinginan belajar tidak pernah habis oleh karena itu, aku mengikuti berbagai Bootcamp dan Short Class</p>
+   <p>Sehingga dari sana aku belajar banyak diantaranya, Data analisis, Data engineering, Audit, dll.</p>
+   <br>
+   <p>Tak kenal maka tak sayang, maka dari itu feel free to reach me ya! Ayo kita kenalan!</p>
+
+   </div>
+   <script>
+      function showMenu(){
+         var x = document.getElementById('hamburger').innerHTML;
+         if(x=="x"){
+            document.getElementById('hamburger').innerHTML="&#8801;";
+            document.getElementById('menu_vertikal').style.display="none";
+         } else {
+            document.getElementById('hamburger').innerHTML="x";
+            document.getElementById('menu_vertikal').style.display="block";
+         }
+      }
+   </script>
+</body>
+</html>

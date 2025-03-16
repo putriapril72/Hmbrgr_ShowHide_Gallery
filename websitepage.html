@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Website Page</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+body {
+   font-family: Arial, sans-serif;
+}
+
+#hamburger {
+   cursor: pointer;
+   font-size: 30px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   z-index: 1000;
+}
+
+#menu_vertikal {
+   display: none; 
+   position: fixed;
+   top: 0;
+   right: 0; 
+   width: 300px; 
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   z-index: 999;
+   padding-top: 60px;
+   box-shadow: -2px 0 3px rgba(0, 0, 0, 0.5); 
+}
+
+#menu_vertikal ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#menu_vertikal li {
+   padding: 15px 20px;
+   text-align: center;
+}
+
+#menu_vertikal a {
+   color: white;
+   text-decoration: none;
+   font-size: 24px;
+}
+
+#menu_vertikal a:hover {
+   text-decoration: underline; 
+}
+.paddingg {
+    padding: 1%;
+}
+.image-container {
+    padding-left: 10%;
+    padding-top: 15%;
+}
+
+
+.bodytext {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex; 
+    align-items: flex-start;
+}
+
+.profile-image {
+    margin-right: 30px;
+}
+
+.note-container {
+    width: 900px;
+    max-width: 90%; 
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#toggleButton {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+</style>
+<div class="bodytext"
+<body>
+    <b id="hamburger" onclick="showMenu();">&#8801;</b>
+    <nav id="menu_vertikal">
+       <ul>
+          <li><a href="Background.html">Background</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Lifestyle">Lifestyle</a></li>
+       </ul>
+    </nav>
+</body>
+    <body>
+    <script>
+       function showMenu(){
+          var x = document.getElementById('hamburger').innerHTML;
+          if(x=="x"){
+             document.getElementById('hamburger').innerHTML="&#8801;";
+             document.getElementById('menu_vertikal').style.display="none";
+          } else {
+             document.getElementById('hamburger').innerHTML="x";
+             document.getElementById('menu_vertikal').style.display="block";
+          }
+       }
+    </script>
+ </body>
+
+ <div class="container">
+    
+    <div class="note-container">
+        <h1>Putri Aprilya Nurpratiwi here</h1>
+        <p>Welcome to my page!</p>
+
+        <div id="content" style="display: none;">
+            <p>jangan lupa scroll ke bawah yaw :)</p>
+        </div>
+
+
+        <button id="toggleButton" onclick="toggleContent()">Show More</button>
+    </div>
+</div>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById('content');
+        var button = document.getElementById('toggleButton');
+
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block"; 
+            button.innerText = "Hide"; 
+        } else {
+            content.style.display = "none"; 
+            button.innerText = "Show More"; 
+        }
+    }
+</script>
+</body>
+</div>
+<br>
+<h1>
+Feel free to reach me out
+</h1>
+<p>
+    <ul>
+        <li>LinkedIn : <a href="https://id.linkedin.com/in/putriaprilyan">putriaprilyan</a></li>
+        <li>Instagram : <a href="https://www.instagram.com/uprileea/#">@uprileea</a></li>
+        <li>Email : aprl.prtw27@gmail.com</li>
+     </ul>
+</p>
+<br>
+<br>
+
+
+ </html>

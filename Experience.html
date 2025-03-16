@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Experience.html</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+       }
+       #hamburger {
+           cursor: pointer;
+           font-size: 30px;
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           z-index: 1000;
+       }
+       
+       #menu_vertikal {
+           display: none; 
+           position: fixed;
+           top: 0;
+           right: 0;
+           width: 300px;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.5);
+           color: white;
+           z-index: 999;
+           padding-top: 60px;
+           box-shadow: -2px 0 3px rgba(0, 0, 0, 0.5);
+       }
+       
+       #menu_vertikal ul {
+           list-style-type: none;
+           padding: 0;
+       }
+       
+       #menu_vertikal li {
+           padding: 15px 20px;
+           text-align: center;
+       }
+       
+       #menu_vertikal a {
+           color: white;
+           text-decoration: none;
+           font-size: 24px;
+       }
+       
+       #menu_vertikal a:hover {
+           text-decoration: underline;
+       }
+       
+       .paddingg {
+           padding: 1%;
+       }
+       
+       header {
+           text-align: left;
+       }
+
+       
+       .gallery {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr); 
+           gap: 8px;
+           margin-top: 20px; 
+       }
+
+       .gallery img {
+           width: 70%; 
+           border-radius: 5px; 
+       }
+
+       .caption {
+           text-align: left; 
+           margin-top: 5px; 
+       }
+   </style>
+</head>
+
+<body>
+   <b id="hamburger" onclick="showMenu();">&#8801;</b>
+   <nav id="menu_vertikal">
+      <ul>
+         <li><a href="websitepage.html">Home</a></li>
+         <li><a href="Background.html">Background</a></li>
+         <li><a href="Lifestyle">Lifestyle</a></li>
+      </ul>
+   </nav>
+   <div class="paddingg">
+       <h1>Experience</h1>
+       <p>Hanya membagikan sedikit pengalaman yang cukup berarti di hidup ini</p>
+       
+       <!-- Kolase Gambar -->
+       <div class="gallery">
+           <div>
+               <img src="c:\Users\asus-pc\Downloads\20241205_171241.jpg" alt="Gambar 1">
+               <div class="caption">AutoCad ;)</div>
+           </div>
+           <div>
+               <img src="c:\Users\asus-pc\Downloads\20250211_024134.jpg" alt="Gambar 2">
+               <div class="caption">Pertama kali belajar Data Analisis</div>
+           </div>
+           <div>
+               <img src="c:\Users\asus-pc\Downloads\20250310_190833.jpg" alt="Gambar 3">
+               <div class="caption">Belajar HTML</div>
+           </div>
+           <div>
+               <img src="c:\Users\asus-pc\Downloads\20250311_154934.jpg" alt="Gambar 4">
+               <div class="caption">Typesetter ujian</div>
+           </div>
+       </div>
+   </div>
+   
+   <script>
+      function showMenu(){
+         var x = document.getElementById('hamburger').innerHTML;
+         if(x=="x"){
+            document.getElementById('hamburger').innerHTML="&#8801;";
+            document.getElementById('menu_vertikal').style.display="none";
+         } else {
+            document.getElementById('hamburger').innerHTML="x";
+            document.getElementById('menu_vertikal').style.display="block";
+         }
+      }
+   </script>
+</body>
+</html>
